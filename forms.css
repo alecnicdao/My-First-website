@@ -1,0 +1,264 @@
+/* mobile layout */
+
+* {
+    box-sizing: border-box;
+}
+
+h2 {
+    text-align: center;
+    color: #B0E0E6;
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+h3 {
+    color: #A9A9A9;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+fieldset {
+    border: 2px dotted #D8BFD8;
+    margin: 20px;
+    padding: 30px 20px;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 15px;
+    color: #FFFFFF;
+}
+
+label {
+    font-weight: bold;
+    font-size: 15px;
+    color: #9370Db;
+}
+
+.total label {
+    width: 50px;
+}
+
+.heading span {
+    font-size: 15px;
+    font-weight: bolder;
+    width: 50px;
+    text-align: center;
+}
+
+span {
+    width: 16px;
+    color: #778899;
+    text-align: center;
+}
+
+input[type="text"] {
+    height: 25px;
+    border: 2px #E6E8FA groove;
+    font-size: 12px;
+    font-weight: bolder;
+    text-align: center;
+    padding: 10px;
+}
+
+input[type="submit"] {
+    height: 50px;
+    width: 150px;
+    border: 10px #D8BFD8 ridge;
+    color: #B22222;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+footer {
+    color: #800000;
+}
+
+h4 {
+    color: #FF4500;
+    text-align: center;
+}
+
+#pic {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+
+#pic img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+#pic2 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+#pic2 img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+#game {
+    width: 100px;
+}
+
+/*tablet layout */
+@media only screen and (min-width: 768px) {
+    h2 {
+        font-size: 30px;
+    }
+
+    h3 {
+        font-size: 28px;
+    }
+
+    fieldset {
+        margin: 20px;
+        padding: 30px 23px;
+    }
+
+    legend {
+        font-size: 15px;
+    }
+
+    label {
+        font-size: 15px;
+    }
+
+    .total label {
+        width: 150px;
+    }
+
+    .heading span {
+        font-size: 15px;
+        width: 110px;
+    }
+
+    span {
+        display: inline-block;
+        width: 90px;
+    }
+
+    input[type="text"] {
+        height: 30px;
+        width: 120px;
+        border: 3px #E6E8FA groove;
+        font-size: 20px;
+    }
+    
+    input[type="submit"] {
+    height: 45px;
+    width: 145px;
+    border: 10px #D8BFD8 ridge;
+    }
+    
+    .selectArea {
+        margin-left: 90px;
+    }
+
+    #pic {
+        width: 35%;
+    }
+
+    #pic img {
+        width: 100%;
+    }
+    
+    #pic2 {
+        width: 60%;
+    }
+
+    #pic2 img {
+        width: 100%;
+    }
+    
+    #game {
+        width: 500px;
+    }  
+
+}
+
+/*desktop layout */
+@media only screen and (min-width: 992px) {
+    h2 {
+        font-size: 35px;
+    }
+
+    h3 {
+        font-size: 25px;
+    }
+
+    fieldset {
+        margin: 25px;
+        padding: 32px 25px;
+    }
+
+    legend {
+        font-size: 20px;
+    }
+
+    label {
+        font-size: 18px;
+    }
+
+    fieldset label {
+        width: 160px;
+    }
+
+    .total label {
+        width: 200px;
+    }
+
+    .heading span {
+        font-size: 18px;
+        width: 112px;
+        text-align: right;
+    }
+
+    span {
+        display: inline-block;
+        width: 95px;
+    }
+
+    input[type="text"] {
+        height: 35px;
+        width: 125px;
+        border: 5px #E6E8FA groove;
+        font-size: 20px;
+    }
+    
+    input[type="submit"] {
+        height: 45px;
+        width: 145px;
+        border: 10px #D8BFD8 ridge;
+    }
+    
+    .selectArea {
+        margin-left: 100px;
+    }
+
+    #pic {
+        width: 40%;
+    }
+    
+    #pic img {
+        width: 100%;
+    }
+    
+    #pic2 {
+        width: 50%;
+    }
+
+    #pic2 img {
+        width: 100%;
+    }
+    
+    #game {
+        width: 850px;
+    }
+}

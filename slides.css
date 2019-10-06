@@ -1,0 +1,154 @@
+/* mobile layout */
+
+* {
+    box-sizing: border-box;     
+}
+
+button {
+    background-color: #FFFFE0;
+    border: groove #696969 4px;
+    font-size: 1em;
+    color: blue;
+}
+
+#next, #previous {
+    color: #000000;
+    font-weight: bolder;
+    height: 40px;
+    width: 25%;
+    float: left;
+    font-size: 14px;
+}
+
+#play, #pause {
+    color:#483D8B;
+    font-weight: bolder;
+    height: 40px;
+    width: 25%;
+    float: left;
+    font-size: 17px;
+}
+
+#caption {
+    text-align: center;
+    color: #006400;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#picture {
+    margin: auto;
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+#desc {
+    margin-top: 90px;
+}
+
+/* tablet layout */
+
+@media only screen and (min-width: 768px) {
+    button {
+        background-color: #FFFFE0;
+        border: dashed #2F4F4F 2px;
+        font-size: 1em;
+        color: blue;
+    }
+
+    #next, #previous {
+        color: #A9A9A9;
+        font-weight: bolder;
+        height: 40px;
+        width: 25%;
+        float: left;
+        font-size: 25px;
+    }
+
+    #play, #pause {
+        color:#6495ED;
+        font-weight: bolder;
+        height: 40px;
+        width: 25%;
+        float: left;
+        font-size: 25px;
+    }
+
+    #caption {
+        text-align: center;
+        color: #87CEFA;
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    #picture {
+        width: 25%;
+        height: auto;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    #desc {
+        margin-top: 90px;
+    }
+}
+
+/* Desktop */
+
+@media only screen and (min-width: 992px) {
+
+    button {
+        background-color: #696969;
+        border:groove #2F4F4F 6px;
+        font-size: 1em;
+        color:blue;
+    }
+
+    #next, #previous {
+        color: #778899;
+        font-weight: bolder;
+        width: 90px;
+        height: 45px;
+        width: 25%;
+        float: left;
+        font-size: 25px;
+    }
+
+    #play, #pause {
+        color: #F8F8FF;
+        font-weight: bolder;
+        width: 90px;
+        height: 45px;
+        width: 25%;
+        float: left;
+        font-size: 25px;
+    }
+
+    #caption {
+        text-align: center;
+        color: #48D1CC;
+        font-size: 35px;
+        font-weight: bold;
+    }
+
+    #picture {
+        margin: auto;
+        display: block;
+    }
+
+    h1 {
+        font-size: 50px;
+        text-align: center;
+    }
+
+    #desc {
+        margin-top: 100px;
+    }
+}

@@ -1,0 +1,297 @@
+/*
+Common Style Decisions for Website
+color scheme:
+Dark blue:
+Lighest blue #336078
+Ligher blue #19475F
+Dark blue #083045
+Darker blue #021E2D
+Darkest blue #001018
+
+Yellow:
+Lightest Yellow #FFF2BF
+Lighter Yellow #FFEA96
+Yellow #EED369
+Darker Yellow #CDB041
+Darkest Yellow #AA8E21
+*/
+
+/*CELL PHONE*/
+
+* {
+    box-sizing: border-box;     
+}
+
+body {
+    background-color: #336078;
+    background-image: url("future.jpg");
+    color: #EED369;
+    margin: 0;
+    padding: 24px 48px;
+}
+
+@font-face {
+    font-family: sway;
+    src: url(sway_font.ttf);
+}
+
+a {
+    color: #FFEA96;
+    text-decoration: underline;
+    font-family: sway;
+}
+
+a:hover {
+    color: #FF4500;
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #AA8E21;
+}
+
+h1 {
+    text-align: center;
+}
+
+[class*="col-"] {
+    width: 100%;
+}
+
+header {
+    height: 123px;
+    padding-top: 60px; 
+    background-image: url("jon.jpg");
+    background-position: center;
+    background-repeat: repeat-x;
+    margin-bottom: 20px;
+    margin-left: -48px;
+    margin-right: -48px;
+}
+
+header p {
+    text-align: center;
+    color: #0000CD;
+    background-color: #00BFFF;
+    line-height: 85px;
+    height: 85px;
+    width: 300px;
+    margin: auto;
+    border-radius: 85px;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+nav {
+    border: #696969 3px;
+    text-align: center;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav a:link, nav a:visited, nav button {
+    color: #021E2D;
+    background-color: #FFF2BF;
+    height: 46px;
+    width: 100%;
+    line-height: 46px;
+    display: block;
+    border: solid 2px #021E2D;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 24px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+nav button {
+    font-family: sway;
+}
+
+nav a:hover, nav button:hover {
+    color: #001018;
+    background-color: #083045;
+}
+
+nav .flyout-content {
+    display: none;
+}
+
+nav .flyout:hover .flyout-content {
+    display: block;
+}
+
+main section {
+    border-top: 3px solid #A9A9A9;
+    border-left: 3px solid #A9A9A9;
+    margin: 8px;
+    padding: 12px;
+    border-radius: 75px;
+    box-shadow: -4px 0px 8px #A9A9A9;
+}
+
+main section img {
+    float: right;
+    margin-left: 8px;
+}
+
+aside {
+    background-color: #696969;
+    text-align: center;
+    text-shadow: 1px 1px #4682B4; 
+    padding: 10px;
+}
+
+aside h3 {
+    color: #4682B4;
+}
+
+div.hw5 {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+    border: 3px solid #696969;
+    transform: rotate(20deg);
+    text-align: center;
+}
+
+.hw5:hover {
+    background-color: #8B0000;
+    transition: 4s;
+}
+
+footer {
+    padding-bottom: 16px;
+    text-align: center;
+    font-family: monospace;
+}
+
+/*TABLET LAYOUT*/
+@media only screen and (min-width: 768px) {
+
+nav .flyout {
+    position: relative;    
+}
+    
+nav .flyout-content {
+    position: absolute;
+    left: 220px;
+    top: 0;
+}
+
+nav .flyout:hover button {
+    border-bottom-right-radius: 24px;
+    border-top-right-radius: 24px;
+}
+
+nav a:link, nav a:visited, nav button {
+    width: 220px;
+}    
+    
+header {
+    height: 145px;
+    margin-bottom: 5px;
+}
+    
+
+nav a:link, nav a:visited {
+    color: #021E2D;
+    height: 40px;
+    line-height: 40px;
+    display: block;
+    border: solid 2px #021E2D;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 24px;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+nav a:hover {
+    color: #001018;
+    background-color: #083045;
+}
+    
+/* Grid System */
+
+.col-m-1 {width: 8.33%;}
+.col-m-2 {width: 16.66%;}
+.col-m-3 {width: 25%;}
+.col-m-4 {width: 33.33%;}
+.col-m-5 {width: 41.66%;}
+.col-m-6 {width: 50%;}
+.col-m-7 {width: 58.33%;}
+.col-m-8 {width: 66.66%;}
+.col-m-9 {width: 75%;}
+.col-m-10 {width: 83.33%;}
+.col-m-11 {width: 91.66%;}
+.col-m-12 {width: 100%;}
+    
+}
+
+/*DESKTOP LAYOUT*/
+@media only screen and (min-width: 1120px) {
+    
+header {
+    height: 120px; 
+    margin-bottom: 24px;
+}
+    
+nav a:link, nav a:visited, nav button {
+    width: 256px;
+}
+    
+nav .flyout-content {
+    left: 256px;
+}
+
+header p {
+    width: 420px;
+    font-size: 50px;
+}
+
+nav a:link {
+    height: 46px;
+    width: 256px;
+    line-height: 46px;
+    font-size: 20px;
+}
+
+nav a:visited {
+    height: 46px;
+    width: 256px;
+    line-height: 46px;
+    font-size: 20px;
+}
+    
+/* Grid System */
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+}
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}

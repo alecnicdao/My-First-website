@@ -1,0 +1,43 @@
+span {
+    font-weight: bold;
+}
+
+button {
+    background-color: #BDB76B;
+}
+
+#styleIt {
+    width: 90%;
+    margin: auto;
+    background: #008B8B;
+    padding: 15px;
+}
+
+#styleIt input {
+    width: 90%;
+    height: 50px;
+    font-size: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#styleIt label {
+    font-size: 22px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#myButton {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    padding: 15px;
+    width: 250px;
+}
+
+#myMessage {
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 20px;
+    padding: 15px;
+}
