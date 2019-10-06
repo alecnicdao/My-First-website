@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+<meta charset="UTF-8">
+
+<title>Tickets</title>
+
+<meta name="description" content="Order your tickets now">
+<meta name="keywords" content="Home, Upload, Compose URL, Story, Box Model">
+<meta name="author" content="Alastair Nicdao">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+<link rel="icon" type="text/css" href="resources/hw4newicon.png">
+<link rel="stylesheet" type="text/css" href="resources/hw4style.css">
+<link rel="stylesheet" type="text/css" href="resources/forms.css">
+
+<script src="resources/jsform.js"></script>
+    
+</head>
+<body>
+<header>
+    
+<p>Tickets</p>
+</header>
+<nav>
+    <ul>
+        <li><a href=index.html
+        title="Click to go to Home page">
+        Home</a></li>
+        <li><a href=animation.html
+        title="Click to view my top 5 NBA players">
+        Top Five</a>
+        <li><a href=slideshow.html
+        title="Click to see how NBA 2K has evolved">
+        NBA TwoK</a></li>
+        <li class="flyout">
+            <button>SEE MORE &#187;</button>
+            <div class="flyout-content">
+            <a href="form.html"
+            title="Click to order your tickets in advance">
+            Tickets</a>
+            <a href="upload.html"
+            title="Click to know how to upload">
+            Upload to Icarus</a>
+            <a href=compose.html
+            title="Click to know how to compose URL">
+            Compose URL</a>
+            <a href=story.html
+            title="Click to read an interesting story">
+            Interactive Story</a>
+            <a href=hw3.html
+            title="Click to Explore Box Model">
+            Box Model</a>
+            <a href=structure.html
+            title="Click to know a little about basketball">
+            Basketball</a>
+            </div>
+        </li> 
+    </ul>
+</nav>
+
+<main>
+<h2>Order Your NBA Tickets</h2>    
+
+<form method="post" 
+action="http://icarus.cs.weber.edu/~linda/cs2350/submit.php">
+
+<fieldset id="information">
+
+<legend>Select Information</legend>
+<h3>Select Game/Time</h3>
+<div class="select game">
+<select name="game" id="game">
+    <option value="0" selected="selected">
+        Select Game
+    <option value="1">
+    Utah Jazz vs. Denver Nuggets (April 9 @ 7:00pm)</option>
+    <option value="2">
+    Atlanta Hawks vs. Indiana Pacers (April 10 @ 8:00pm)</option>
+    <option value="3">
+    Washington Wizards vs. Boston Celtics (April 9 @ 7:00pm)</option>
+    <option value="4">
+    Brooklyn Nets vs. Miami Heat (April 10 @ 8:00pm)</option>
+    <option value="5">
+    Charlotte Hornets vs. Cleveland Cavaliers (April 9 @ 7:00pm)</option>
+    <option value="6">
+    Chicago Bulls vs. New York City (April 9 @ 7:00pm)</option>
+    <option value="7">
+    Chicago Bulls vs. Philadelphia 76ers (April 10 @ 8:00pm)</option>
+    <option value="8">
+    Dallas Mavericks vs. Phoenix Suns (April 9 @ 7:30pm)</option>
+    <option value="9">
+    San Antonio Spurs vs. Dallas Mavericks (April 10 @ 7:00pm)</option>
+    <option value="10">
+    Detroit Pistons vs. Memphis Grizzlies (April 9 @ 7:00pm)</option>
+    <option value="11">
+    New York Knicks vs. Detroit Pistons (April 10 @ 8:00pm)</option>
+    <option value="12">
+    Golden State Warriors vs. N.O. Pelicans (April 9 @ 7:00pm)</option>
+</select>
+</div>
+    
+<h3>Select Seating Area</h3>
+<div class="selectArea">
+    <p>
+        <input type="radio" name="seating" id="seating1" value="1">
+        <label for="seating1">Courtside Seats</label>
+    </p>
+
+    <p>
+        <input type="radio" name="seating" id="seating2" value="2">
+        <label for="seating2">Front Row</label>
+    </p>
+    
+    <p>
+        <input type="radio" name="seating" id="seating3" value="3">
+        <label for="seating3">Middle-Front Row</label>
+    </p>
+    
+    <p>
+        <input type="radio" name="seating" id="seating4" value="4">
+        <label for="seating4">Middle Row</label>
+    </p>
+    
+    <p>
+        <input type="radio" name="seating" id="seating5" value="5">
+        <label for="seating5">Middle-Back Row</label>
+    </p>
+
+    <p>
+        <input type="radio" name="seating" id="seating6" value="6">
+        <label for="seating6">Upper Row</label>
+    </p>
+    
+    <p>
+        <input type="radio" name="seating" id="seating7" value="7">
+        <label for="seating7">Far-Back Row</label>
+    </p>
+
+    <p>
+        <input type="radio" name="seating" id="seating8" value="8">
+        <label for="seating8">Nosebleed</label>
+    </p>
+    
+</div>
+<div id="pic2" >
+    <h4>More about the NBA</h4>
+    <a href="https://www.nba.com/#/"  
+   target="_blank"
+   title="Click to know more about the NBA">
+   <img src="resources/ticketNBA.jpg"
+    alt="Click to go to NBA.com"></a></div>
+</fieldset>    
+
+<fieldset id="ticket">
+<legend>Enter Quantities</legend>
+<p class="heading">
+    <span class="one">Item</span>
+    <span class="two">Price</span>
+    <span class="three">Quantity</span>
+    <span class="four">Cost</span>
+</p>
+
+<p>
+    <label for="jersey_adult_num">Adult Jersey (M/W)</label>
+    <span>$110.00</span>
+    <input type="hidden" id="jersey_adult_price" 
+        name="jersey_adult_price" value="110.00">
+    <input type="text" id="jersey_adult_num" class="num"
+        name="jersey_adult_num" value="0">
+    <input type="text" id="jersey_adult_total" class="total"
+        name="jersey_adult_total" value="0.00" readonly>
+</p>
+
+<p>
+    <label for="jersey_child_num">Child Jersey (Kid)</label>
+    <span>$70.00</span>
+    <input type="hidden" id="jersey_child_price" 
+        name="jersey_adult_price" value="70.00">
+    <input type="text" id="jersey_child_num" class="num"
+        name="jersey_child_num" value="0">
+    <input type="text" id="jersey_child_total" class="total"
+        name="jersey_child_total" value="0.00" readonly>
+</p>
+
+<p>
+    <label for="adult_shirt">Adult Shirt (M/W)</label>
+    <span>$28.00</span>
+    <input type="hidden" id="adult_shirt_price" 
+        name="adult_shirt_price" value="28.00">
+    <input type="text" id="adult_shirt" class="num"
+        name="adult_shirt" value="0">
+    <input type="text" id="adult_shirt_total" class="total"
+        name="adult_shirt_total" value="0.00" readonly>
+</p>
+
+<p>
+    <label for="child_shirt">Child Shirt (Kid)</label>
+    <span>$22.00</span>
+    <input type="hidden" id="child_shirt_price"
+        name="child_shirt_price" value="22.00">
+    <input type="text" id="child_shirt" class="num"
+        name="child_shirt" value="0">
+    <input type="text" id="child_shirt_total" class="total"
+        name="child_shirt_total" value="0.00" readonly>
+</p>
+
+<p>
+    <label for="adult_hat">Adult Hat (M/W)</label>
+    <span>$30.00</span>
+    <input type="hidden" id="adult_hat_price" 
+        name="adult_hat_price" value="30.00">
+    <input type="text" id="adult_hat" class="num"
+        name="adult_hat" value="0">
+    <input type="text" id="adult_hat_total" class="total"
+        name="adult_hat_total" value="0.00" readonly>
+</p>
+    
+<p>
+    <label for="child_hat">Child Hat (Kid)</label>
+    <span>$26.00</span>
+    <input type="hidden" id="child_hat_price" 
+        name="child_hat_price" value="26.00">
+    <input type="text" id="child_hat" class="num"
+        name="child_hat" value="0">
+    <input type="text" id="child_hat_total" class="total"
+        name="child_hat_total" value="0.00" readonly>
+</p>
+<h4>Playoffs start 4/13<br>
+    Get your tickets in advance!</h4>
+<div id="pic" ><a href="https://www.tickpick.com/nba-playoffs-tickets/?gclid=EAIaIQobChMIkrz_88vS4QIVCsNkCh00wglMEAAYASAAEgLMGPD_BwE&gclsrc=aw.ds"  
+   target="_blank"
+   title="Click to get your Playoff tickets">
+   <img src="resources/bestseats.png"
+    alt="Score your seats"></a></div>
+
+</fieldset>
+<fieldset>
+<legend>Total</legend>
+<h3>See the Total</h3>   
+<p class="total">
+    <label for="sales_tax">Tax</label>
+    <input type="text" id="sales_tax" class="total"
+        name="sales_tax" value="0.00" readonly>
+</p>
+
+<p class="total">
+    <label for="total">Total</label>
+    <input type="text" id="total" class="total"
+        name="total" value="0.00" readonly>
+</p>
+<p><input type="submit" name="submit" value="Place Order"></p>   
+</fieldset>
+
+</form>
+</main>    
+    
+<footer>
+<p> Created by Alastair Nicdao.
+    CS 2350 Weber State University.</p>
+<hr>
+</footer>
+
+</body>
+</html>
